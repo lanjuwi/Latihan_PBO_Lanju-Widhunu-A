@@ -17,10 +17,13 @@ class TiketRegular extends Tiket
 
     public function hitungTotalHarga()
     {
+        return $this->jumlah_kursi * $this->hargaDasarTiket;
     }
 
     public function tampilkanInfoFasilitas()
     {
+        return "Audio: " . $this->tipeAudio .
+           ", Baris: " . $this->lokasiBaris;
     }
 }
 

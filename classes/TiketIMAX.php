@@ -17,10 +17,14 @@ class TiketIMAX extends Tiket
 
     public function hitungTotalHarga()
     {
+        return ($this->jumlah_kursi * $this->hargaDasarTiket)
+            + 35000;
     }
 
     public function tampilkanInfoFasilitas()
     {
+        return "3D ID: " . $this->kacamata3dId .
+           ", Efek: " . $this->efekGerakFitur;
     }
 }
 
